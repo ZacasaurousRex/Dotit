@@ -4,8 +4,8 @@ package com.pullstartstudios.dotit;
  * ==============================
  * Version: 1.0
  * Created: March 9, 2015
- * Description: User tries to tap as many dots as they can before time runs out.
- * Notes:
+ * Description: User tries to tap as many dots possible in the allotted time, while the dots go faster and faster.
+ * Notes
  * ==============================
  */
 
@@ -13,12 +13,14 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 
-public class SpeedRound extends ActionBarActivity {
+public class FasterAndFaster extends ActionBarActivity {
 
-    //  Creates the speed round
+    //  Creates faster and faster
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_speed_round);
-    }// End on Create
+        setContentView(R.layout.activity_faster_and_faster);
+
+    }// End oncreate
+
 }// End class

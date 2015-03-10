@@ -48,6 +48,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:clickable="true"
+        android:onClick="dontTouchOnclick"
         />
 
     //  Faster and Faster Button
@@ -64,6 +65,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:clickable="true"
+        android:onClick="fasterAndFasterhOnclick"
         />
 
     //  Leaderboard

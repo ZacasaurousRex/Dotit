@@ -24,6 +24,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pullstartstudios.dotit.HomeScreen" />
         </activity>
+        <activity
+            android:name=".DontTouch"
+            android:label="@string/title_activity_dont_touch"
+            android:parentActivityName=".HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pullstartstudios.dotit.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".FasterAndFaster"
+            android:label="@string/title_activity_faster_and_faster" >
+        </activity>
     </application>
 
 </manifest>
