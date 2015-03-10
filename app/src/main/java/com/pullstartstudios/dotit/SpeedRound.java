@@ -5,7 +5,7 @@ package com.pullstartstudios.dotit;
  * Version: 1.0
  * Created: March 9, 2015
  * Description: User tries to tap as many dots as they can before time runs out.
- * Notes:
+ *
  * ==============================
  */
 
