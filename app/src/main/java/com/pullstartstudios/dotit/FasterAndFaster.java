@@ -5,12 +5,8 @@ package com.pullstartstudios.dotit;
  * Version: 1.0
  * Created: March 9, 2015
  * Description: User tries to tap as many dots possible in the allotted time, while the dots go faster and faster.
- * Notes
+ * Notes: We got it working for git hub
  * ==============================
- *
- *Check to see if this works, you look nice today!
- *
- * Maybe this time it will work
  */
 
 import android.support.v7.app.ActionBarActivity;
