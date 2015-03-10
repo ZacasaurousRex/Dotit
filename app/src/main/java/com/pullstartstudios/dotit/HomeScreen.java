@@ -43,7 +43,7 @@ public class HomeScreen extends Activity {
         dontTouch = (ImageButton) v;
         startActivity(new Intent(getApplicationContext(), DontTouch.class));
 
-    }// End dont touch
+    }// End Don't Touch
 
     //  Changes the screen when SpeedRound is clicked
     public void fasterAndFasterhOnclick(View v) {
