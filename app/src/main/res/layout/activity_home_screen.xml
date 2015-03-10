@@ -9,11 +9,90 @@
         android:id="@+id/title"
         android:src="@drawable/title"
         android:layout_width="wrap_content"
-        android:layout_height="75"
+        android:layout_height="75dp"
+        android:scaleType="fitCenter"
         android:layout_marginTop="35dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        />
+
+    //  Speed Round Button
+    <ImageButton
+        android:id="@+id/speedRound"
+        android:src="@drawable/speed_round"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:background="#ffffffff"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="speedRoundOnclick"
+        />
+
+    //  Dont Touch Button
+    <ImageButton
+        android:id="@+id/dontTouch"
+        android:src="@drawable/dont_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:background="#ffffffff"
+        android:layout_below="@+id/speedRound"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        />
+
+    //  Faster and Faster Button
+    <ImageButton
+        android:id="@+id/fasterAndFaster"
+        android:src="@drawable/faster_faster"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:background="#ffffffff"
+        android:layout_below="@+id/dontTouch"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        />
+
+    //  Leaderboard
+    <ImageButton
+        android:id="@+id/leaderboard"
+        android:src="@drawable/leaderboard_full"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:background="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        />
+    //  Settings
+    <ImageButton
+        android:id="@+id/settings"
+        android:src="@drawable/settings_full"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:background="#ffffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
         />
 
 </RelativeLayout>
