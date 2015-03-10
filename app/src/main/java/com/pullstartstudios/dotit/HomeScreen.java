@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 public class HomeScreen extends Activity {
 
     //  THIS IS A TEST CAN YOU SEE THIS--------------------------------------
+    //  I can see it, hope you can see this ---------------------------------
     //  Buttons on the home screen
     ImageButton speedRound, dontTouch, fasterAndFaster;
 
