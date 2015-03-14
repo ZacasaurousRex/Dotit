@@ -9,11 +9,11 @@ package com.pullstartstudios.dotit;
  * ==============================
  */
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 
-public class DontTouch extends ActionBarActivity {
+public class DontTouch extends Activity {
 
     //  Creates Don't Touch
     @Override

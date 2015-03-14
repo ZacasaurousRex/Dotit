@@ -8,14 +8,20 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".HomeScreen"
+            android:name=".SplashScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name" >
+
+        </activity>
+
         <activity
             android:name=".SpeedRound"
             android:label="@string/title_activity_speed_round"
@@ -24,6 +30,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pullstartstudios.dotit.HomeScreen" />
         </activity>
+
         <activity
             android:name=".DontTouch"
             android:label="@string/title_activity_dont_touch"
@@ -32,10 +39,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pullstartstudios.dotit.HomeScreen" />
         </activity>
+
         <activity
             android:name=".FasterAndFaster"
             android:label="@string/title_activity_faster_and_faster" >
         </activity>
+
     </application>
 
 </manifest>

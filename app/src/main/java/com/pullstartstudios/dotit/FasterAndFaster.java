@@ -9,11 +9,11 @@ package com.pullstartstudios.dotit;
  * ==============================
  */
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 
-public class FasterAndFaster extends ActionBarActivity {
+public class FasterAndFaster extends Activity {
 
     //  Creates faster and faster
     @Override

@@ -9,11 +9,11 @@ package com.pullstartstudios.dotit;
  * ==============================
  */
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 
-public class SpeedRound extends ActionBarActivity {
+public class SpeedRound extends Activity {
 
     //  Creates the speed round
     @Override
