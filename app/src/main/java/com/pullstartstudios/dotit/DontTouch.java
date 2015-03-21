@@ -11,10 +11,13 @@ package com.pullstartstudios.dotit;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 
 public class DontTouch extends Activity {
 
+    TextView score;
+    int counter = 0;
     //  Creates Don't Touch
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,4 +25,10 @@ public class DontTouch extends Activity {
         setContentView(R.layout.activity_dont_touch);
 
     }// End on create
+
+    public void init(){
+        score = (TextView) findViewById(R.id.score_counter);
+        //  When the dot is clicked
+        //score.setText(counter);
+    }
 }

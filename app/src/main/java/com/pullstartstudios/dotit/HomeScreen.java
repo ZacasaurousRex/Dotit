@@ -35,6 +35,7 @@ public class HomeScreen extends Activity {
     public void speedRoundOnclick(View v) {
         speedRound = (ImageButton) v;
         startActivity(new Intent(getApplicationContext(), SpeedRound.class));
+        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
 
     }// End speed round
 
@@ -42,6 +43,7 @@ public class HomeScreen extends Activity {
     public void dontTouchOnclick(View v) {
         dontTouch = (ImageButton) v;
         startActivity(new Intent(getApplicationContext(), DontTouch.class));
+        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
 
     }// End Don't Touch
 
@@ -49,6 +51,7 @@ public class HomeScreen extends Activity {
     public void fasterAndFasterhOnclick(View v) {
         fasterAndFaster = (ImageButton) v;
         startActivity(new Intent(getApplicationContext(), FasterAndFaster.class));
+        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
 
     }// End faster and faster
 }// End home screen

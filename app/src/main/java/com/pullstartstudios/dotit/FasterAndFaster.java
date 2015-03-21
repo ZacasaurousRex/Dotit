@@ -11,9 +11,13 @@ package com.pullstartstudios.dotit;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 
 public class FasterAndFaster extends Activity {
+
+    TextView score;
+    int counter = 0;
 
     //  Creates faster and faster
     @Override
@@ -23,4 +27,9 @@ public class FasterAndFaster extends Activity {
 
     }// End oncreate
 
+    public void init(){
+        score = (TextView) findViewById(R.id.score_counter);
+        //  When the dot is clicked
+        //score.setText(counter);
+    }
 }// End class
