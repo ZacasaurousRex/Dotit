@@ -23,7 +23,7 @@ public class DontTouch extends Activity {
     TextView score;
     int counter = 0;
     ImageButton startDot;
-    Animation fadeOut;
+    Animation fadeOut, fadeIn;
 
     //  Creates Don't Touch
     @Override
@@ -31,19 +31,29 @@ public class DontTouch extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dont_touch);
         score = (TextView) findViewById(R.id.score_counter);
+        createStart();
     }// End on create
 
     public void createStart() {
+        //  initializes the start dot
         startDot = (ImageButton) findViewById(R.id.start_dot);
+
+        //  Creates the fade out animation
         fadeOut = AnimationUtils.loadAnimation(this, R.anim.abc_fade_out);
+        fadeOut.setDuration(150);
+        fadeIn = AnimationUtils.loadAnimation(this, R.anim.abc_fade_in);
+        fadeIn.setDuration(150);
+
         startDot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startDot.startAnimation(fadeOut);
                 startDot.setVisibility(View.INVISIBLE);
                 startDot.setClickable(false);
-            }
-        });
-
+                score.startAnimation(fadeIn);
+                score.setVisibility(View.VISIBLE);
+                //  createDot();
+            }// End on click
+        });//   End on click listener
     }// End create start
 }

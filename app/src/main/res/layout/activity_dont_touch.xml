@@ -13,7 +13,8 @@
         android:id="@+id/score_counter"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#ff000000" />
+        android:textColor="#ff000000"
+        android:visibility="invisible"/>
 
     <ImageButton
         android:id="@+id/start_dot"
@@ -24,5 +25,5 @@
         android:scaleType="fitCenter"
         android:background="#ffffffff"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
