@@ -13,7 +13,7 @@
         android:id="@+id/score_counter"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#ff000000"
+        android:textColor="#58595B"
         android:visibility="invisible"/>
 
     <ImageButton
@@ -22,6 +22,39 @@
         android:layout_height="80dp"
         android:clickable="true"
         android:src="@drawable/start_dot_dt"
+        android:scaleType="fitCenter"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/dot1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/dot2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/dot3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="false"
+        android:visibility="invisible"
         android:scaleType="fitCenter"
         android:background="#ffffffff"
         android:layout_centerVertical="true"
