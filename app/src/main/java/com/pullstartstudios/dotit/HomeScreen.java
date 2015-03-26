@@ -20,7 +20,7 @@ import android.widget.ImageButton;
 public class HomeScreen extends Activity {
 
     //  Buttons on the home screen
-    ImageButton speedRound, dontTouch, fasterAndFaster;
+    ImageButton speedRound, dontTouch, fasterAndFaster, settings;
 
     //  Creates the home page
     @Override
@@ -48,10 +48,17 @@ public class HomeScreen extends Activity {
     }// End Don't Touch
 
     //  Changes the screen when SpeedRound is clicked
-    public void fasterAndFasterhOnclick(View v) {
+    public void fasterAndFasterOnclick(View v) {
         fasterAndFaster = (ImageButton) v;
         startActivity(new Intent(getApplicationContext(), FasterAndFaster.class));
         overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
 
     }// End faster and faster
+
+    //  Changes the screen when Settings is clicked
+    public void SettingsOnClick(View v) {
+        settings = (ImageButton) v;
+        startActivity(new Intent(getApplicationContext(), Settings.class));
+        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
+    }
 }// End home screen

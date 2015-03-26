@@ -7,4 +7,5 @@
     <string name="title_activity_dont_touch">Dont Touch</string>
     <string name="title_activity_faster_and_faster">Faster And Faster</string>
     <string name="title_activity_splash_screen">Splash Screen</string>
+    <string name="title_activity_settings">Settings</string>
 </resources>
