@@ -1,9 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
     tools:context="com.pullstartstudios.dotit.DontTouch"
     android:background="#ffffffff">
 
@@ -12,8 +9,20 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="0"
+        android:layout_marginTop="16dp"
         android:id="@+id/score_counter"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#ff000000" />
+
+    <ImageButton
+        android:id="@+id/start_dot"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:src="@drawable/start_dot_dt"
+        android:scaleType="fitCenter"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
