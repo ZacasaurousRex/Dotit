@@ -8,13 +8,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="0"
         android:layout_marginTop="16dp"
         android:id="@+id/score_counter"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#58595B"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:textStyle="bold" />
 
     <ImageButton
         android:id="@+id/start_dot"

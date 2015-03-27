@@ -26,7 +26,7 @@ public class DontTouch extends Activity {
     private TextView score;
     private int touchCounter = 0;
     private int totalCounter = 0;
-    private int totalDots = 0;
+    private int totalDots = 1;
     private ImageButton startDot, dot1, dot2, dot3;
     private Animation fadeOut, fadeIn;
 
@@ -35,15 +35,17 @@ public class DontTouch extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dont_touch);
-
+        //  Shows the next dot and the score
+        score = (TextView) findViewById(R.id.score_counter);
 
         //  Initializes the start dot
         createStart();
 
-        //  Checks if the start dot has been clicked
-        if(!startDot.isClickable()){
-            //  createDot();
-        }
+        /*  Determines making another dot
+        Random ranDot = new Random();
+        while(!startDot.isClickable()){
+
+        }*/
     }// End on create
 
     public void createStart() {
@@ -64,8 +66,7 @@ public class DontTouch extends Activity {
                 startDot.setVisibility(View.INVISIBLE);
                 startDot.setClickable(false);
 
-                //  Shows the next dot and the score
-                score = (TextView) findViewById(R.id.score_counter);
+                score.setText("0");
                 score.startAnimation(fadeIn);
                 score.setVisibility(View.VISIBLE);
                 createDot();
@@ -76,8 +77,7 @@ public class DontTouch extends Activity {
 
     //  Creates the dots to play
     public void createDot(){
-        //  A dot has been created, update total
-        ++totalDots;
+
 
         //  Used to randomly generate a color for the images to be
         Random randColGen = new Random();
@@ -98,11 +98,12 @@ public class DontTouch extends Activity {
 
         Random randYGen = new Random();
         int yParam = (int) (score.getHeight() + score.getY());
-        int randYLoc = randYGen.nextInt(height - yParam);;
+        int randYLoc = randYGen.nextInt(height - yParam) + yParam;
 
         //  Determines which dot to create this time
         switch(totalDots) {
             case 1:
+                ++totalCounter;
                 dot1 = (ImageButton) findViewById(R.id.dot1);
                 dot1.setImageResource(id);
 
@@ -126,12 +127,17 @@ public class DontTouch extends Activity {
                 dot1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        dot1.startAnimation(fadeOut);
+                        dot1.setVisibility(View.INVISIBLE);
+                        dot1.setClickable(false);
+                        score.setText(String.valueOf(++touchCounter));
+                        createDot();
                     }
                 });
                 break;
 
             case 2:
+                ++totalCounter;
                 dot2 = (ImageButton) findViewById(R.id.dot2);
                 dot2.setImageResource(id);
 
@@ -150,9 +156,23 @@ public class DontTouch extends Activity {
                 dot2.startAnimation(fadeIn);
                 dot2.setVisibility(View.VISIBLE);
                 dot2.setClickable(true);
+
+                //  Handle click
+                dot2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dot2.startAnimation(fadeOut);
+                        dot2.setVisibility(View.INVISIBLE);
+                        dot2.setClickable(false);
+                        score.setText(String.valueOf(++touchCounter));
+                        createDot();
+
+                    }
+                });
                 break;
 
             case 3:
+                ++totalCounter;
                 dot3 = (ImageButton) findViewById(R.id.dot3);
                 dot3.setImageResource(id);
 
@@ -171,6 +191,19 @@ public class DontTouch extends Activity {
                 dot3.startAnimation(fadeIn);
                 dot3.setVisibility(View.VISIBLE);
                 dot3.setClickable(true);
+
+                //  Handle click
+                dot3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dot3.startAnimation(fadeOut);
+                        dot3.setVisibility(View.INVISIBLE);
+                        dot3.setClickable(false);
+                        score.setText(String.valueOf(++touchCounter));
+                        createDot();
+
+                    }
+                });
                 break;
         }// End switch
     }// End createDot
