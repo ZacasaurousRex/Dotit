@@ -5,7 +5,7 @@ package com.pullstartstudios.dotit;
  * Version: 1.0
  * Created: March 9, 2015
  * Description: User tries to get to the end of time while tapping all dots, but the bad dots.
- * Notes:
+ * Notes: Just want to make this push so you can pull
  * ==============================
  */
 
